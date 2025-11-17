@@ -1,38 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample HTML Page</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Welcome to My Sample Page</h1>
+        <a href="#">
+            <h1 class="top-title">GIALLO BOOLEANO</h1>
+        </a>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-        </ul>
-    </nav>
+    <nav class="breadcrumb">
+        <ul class="cookbook">
+            <li class="category">
+                <h3<a class="category" href="#">DOLCI E DESSERT</a> &gt;
+                    <ul class="recipes">
+                        <li class="recipe">
+                            <h2><a href="#">Tiramisù</a></h2> &gt;
+                        </li>
+                    </ul> <!-- recipes -->
+            </li><!-- .category -->
+        </ul><!-- .cookbook -->
+    </nav><!-- .breadcrumb -->
     <main>
-        <section id="section1">
-            <h2>Section 1</h2>
-            <p>This is the first section of the sample page.</p>
+        <section class="video-recipe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=62AIR1GYzcN0uAuI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-        <section id="section2">
-            <h2>Section 2</h2>
-            <p>This is the second section of the sample page.</p>
-        </section>
-        <section id="section3">
-            <h2>Section 3</h2>
-            <p>This is the third section of the sample page.</p>
-        </section>
+        <section class="summary">
+            <h3>In breve</h3>
+            <ul class="recipe-summary">
+                <li class="difficulty">Difficoltà: <a class="easy" href="#">Facile</a></li>
+                <li class="preparation">Tempo: <a class="time zero-four-h" href="#">40 min</a></li>
+                <!-- l'idea è che il link sia un modo per filtrare tutte le preparazioni che richiedano tra le 0 e le 4 ore -->
+                <li class="portions">Porzione per: <a class="people four-height-p" href="#">8 persone</a></li>
+                <!-- stessa idea di base per le porzioni -->
+                <li class="cost">Costo: <a class="low-cost" href="#">Contenuto</a></li>
+                <li class="notes">Note: <a class="rest" href="#">+2 ore di riposo in frigo</a></li>
+            </ul>
+        </section><!-- .summary -->
+        <section class="social-share">
+            <ul class="share-options">
+                <li class="facebook"><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+                <li class="twitter"><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+                <li class="instagram"><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+                <li class="pinterest"><a href="#"><img src="img/pinterest.png" alt="Pinterest"></a></li>
+                <li class="youtube"><a href="#"><img src="img/youtube.png" alt="YouTube"></a></li>
+            </ul>
+        </section><!-- .social-share -->
+        <article class="presentation">
+            <h2>Presentazione</h2>
+            <div class="spacer"></div>
+            <div class="intro-image">
+                <img src="img/tiramisu.jpg" alt="Tiramisù">
+            </div>
+            <p>Back in the day, grandmothers used to prepare a breakfast
+                that we might call humble today, but was considered very
+                rich at the time! Today the recipe is still unchanged, just
+                break a very fresh egg into a glass, beat it with sugar, and
+                add coffee or hot milk, for children, or Marsala wine or
+                aniseed for adults. This marvelous cream gave rise to
+                mascarpone cream used to make Tiramisù (mascarpone
+                cheese and ladyfingers dessert). This is the best Italian
+                dessert, the most popular and beloved of them all, and it
+                has also birthed many other versions, even an egg-free
+                Tiramisù! There is also a strawberry and Nutella tiramisù!
+                Although the origins of this famous dessert are unclear,
+                because it is disputed between the regions of Veneto,
+                Friuli-Venezia Giulia, Piedmont, and Tuscany, it remains a
+                cornerstone of Italian cuisine and it's widely prepared from
+                North to South. Unfortunately, we weren't able to find out
+                who invented it, but we can certainly teach you how to
+                prepare your best tiramisù ever. So here's the recipe: try it
+                and let us know what you think!</p>
+        </article>
     </main>
     <footer>
         <p>&copy; 2024 Sample Page. All rights reserved.</p>
+        <address class="contact-info">
+            <p>Via Tal dei tali, 10 - 88046 Lamezia Terme (CZ) - VAT 43940293020</p>
+        </address>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Terms of used</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </nav>
+        <div class="disclaimer">
+            <a href="#">Disclaimer</a>
+        </div>
     </footer>
 </body>
+
 </html>
