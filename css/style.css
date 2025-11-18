@@ -5,18 +5,33 @@
     box-sizing: border-box;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* ========== VARIABLES ========== */
+/** ========== UTILITY ========== */
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
+    --primary-color: rgb(255, 149, 20);
+    --secondary-color: rgb(77, 56, 105);
     --text-color: #333;
     --bg-color: #fff;
+}
+
+/* ========== COLORS ========== */
+
+.bg-white{
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-grey{
+    background-color: rgb(245, 244, 242);
+}
+.title-color{
+    color: rgb(255, 149, 20);
+    text-shadow: 0.1rem 0.1rem 0.15rem rgba(0,0,0,0.2);
+}   
+.font-grey{
+    color: #6c6c6c
+}
+
+.text-shadow{
+    text-shadow: 0 1px 1px rgba(255,255,255,0.6);
 }
 
 /* ========== GENERAL ========== */
@@ -41,4 +56,142 @@ ul, ol {
     list-style: none;
 }
 
+/* ========== FLEXBOX ========== */
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========== TYPOGRAPHY ========== */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Nerko One', cursive;
+}
+
+h2, h3, h4, h5, h6, p, a, li {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
 /* ========== LAYOUT ========== */
+
+/** Large mobile first styles
+**   l'idea è fare tutto per la dimensione 
+**   576px, e usare le media queries per le
+**   dimensioni maggiori.
+**/
+
+.top-header{
+    padding: 0 1rem;
+}
+
+/* TODO versione .top-header per tablet e desktop */
+
+.top-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* TODO versione .top-title per tablet e desktop */
+
+.container{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+/* TODO versione .container per tablet e desktop */
+
+.section.video-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0 0.8rem 0;
+}
+
+/* TODO versione .video-summary per tablet e desktop */
+
+@media all and (min-width: 768px) {
+    .section.video-summary{
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .section.video-summary{
+        gap: 2rem;
+    }   
+    
+}
+
+section.summary {
+    background: white;
+    box-shadow: 1px 1px rgb(0 0 255 / 0.2);
+    width: 98%;
+    margin: 0 auto;
+    padding: 1rem;
+} 
+/* TODO versione .summary per tablet e desktop */
+
+@media all and (min-width: 768px) {
+    section.summary {
+        width: 70%;
+    }
+}   
+
+@media all and (min-width: 992px) {
+    section.summary {
+        width: 60%;
+    }
+}   
+
+
+.share-options {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.share-options li {
+ display: flex;
+    background: white;
+    width: 3rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #111;
+    border-radius: 10rem 50rem 50rem 50rem;
+    padding: 1rem;
+}
+
+/* TODO versioni .share-options per tablet e desktop */
+
+
+.main-footer{
+     display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TODO versione .main-footer per tablet e desktop */
+
+/* TODO eliminare */
+.w576{
+    width: 576px;
+    margin: 0 auto;
+}

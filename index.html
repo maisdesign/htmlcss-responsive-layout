@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Giallo Booleano</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <header>
-        <a href="#">
-            <h1 class="top-title">GIALLO BOOLEANO</h1>
-        </a>
-    </header>
-    <nav class="breadcrumb">
-        <ul class="cookbook">
-            <li class="category">
-                <h3<a class="category" href="#">DOLCI E DESSERT</a> &gt;
-                    <ul class="recipes">
-                        <li class="recipe">
-                            <h2><a href="#">Tiramisù</a></h2> &gt;
-                        </li>
-                    </ul> <!-- recipes -->
-            </li><!-- .category -->
-        </ul><!-- .cookbook -->
-    </nav><!-- .breadcrumb -->
-    <main>
+<body class="bg-grey w576">
+    <header class="top-header bg-white">
+        <h1 class="top-title title-color">
+            <a href="#">GIALLO BOOLEANO</a>
+        </h1>
+        <nav class="breadcrumb">
+            <ul class="cookbook">
+                <li class="category">
+                    <h3><a class="category font-grey text-shadow" href="#">DOLCI E DESSERT</a> &gt;
+                        <ul class="recipes">
+                            <li class="recipe">
+                                <h2><a href="#">Tiramisù</a></h2> &gt;
+                            </li>
+                        </ul> <!-- recipes -->
+                </li><!-- .category -->
+            </ul><!-- .cookbook -->
+        </nav><!-- .breadcrumb -->
+    </header><!-- .top-header -->
+    <main class="container">
+        <section class="video-summary">
         <section class="video-recipe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=62AIR1GYzcN0uAuI"
                 title="YouTube video player" frameborder="0"
@@ -45,8 +46,9 @@
                 <li class="notes">Note: <a class="rest" href="#">+2 ore di riposo in frigo</a></li>
             </ul>
         </section><!-- .summary -->
+        </section><!-- .video-summary -->
         <section class="social-share">
-            <ul class="share-options">
+            <ul class="share-options flex">
                 <li class="facebook"><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
                 <li class="twitter"><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
                 <li class="instagram"><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
@@ -80,8 +82,8 @@
                 prepare your best tiramisù ever. So here's the recipe: try it
                 and let us know what you think!</p>
         </article>
-    </main>
-    <footer>
+    </main><!-- main .container -->
+    <footer class="main-footer">
         <p>&copy; 2024 Sample Page. All rights reserved.</p>
         <address class="contact-info">
             <p>Via Tal dei tali, 10 - 88046 Lamezia Terme (CZ) - VAT 43940293020</p>
@@ -97,7 +99,7 @@
         <div class="disclaimer">
             <a href="#">Disclaimer</a>
         </div>
-    </footer>
+    </footer><!-- .main-footer -->
 </body>
 
 </html>
