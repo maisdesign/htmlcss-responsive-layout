@@ -201,7 +201,7 @@ nav.footer-nav ul,
     }
 
     .top-title a {
-        padding: 0 0 1rem 0;
+        padding: 0 0 0 1rem;
     }
 }
 
@@ -209,6 +209,12 @@ nav.footer-nav ul,
     margin: 0 1rem;
     font-size: 0.9rem;
     color: var(--text-color);
+}
+
+@media all and (min-width: 768px) {
+    .breadcrumb {
+        padding: 2rem 0 0 1rem ;
+    }
 }
 
 .category h3 {
@@ -220,6 +226,12 @@ nav.footer-nav ul,
     padding: 1rem;
     flex-direction: column;
     align-items: center;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        padding: 1rem 2rem;
+    }
 }
 
 /* TODO versione .container per tablet e desktop */
@@ -346,10 +358,6 @@ nav.footer-nav ul,
         content: "";
         display: block;
         clear: both;
-    }
-
-    .presentation {
-        padding: 0 1rem;
     }
 
     .presentation .intro-image {
