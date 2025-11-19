@@ -8,47 +8,47 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-grey w576">
-    <header class="top-header bg-white">
+<body class="w576"><!-- TODO eliminare la classe prima di andare in produzione -->
+    <header class="top-header">
         <h1 class="top-title title-color">
             <a href="#">GIALLO BOOLEANO</a>
         </h1>
         <nav class="breadcrumb">
             <ul class="cookbook">
                 <li class="category">
-                    <h3><a class="category font-grey text-shadow" href="#">DOLCI E DESSERT</a> &gt;
-                        <ul class="recipes">
-                            <li class="recipe">
-                                <h2><a href="#">Tiramisù</a></h2> &gt;
-                            </li>
-                        </ul> <!-- recipes -->
+                    <h3><a class="text-shadow" href="#">DOLCI E DESSERT</a> &gt;</h3>
+                    <ul class="recipes">
+                        <li class="recipe">
+                            <h2><a href="#">Tiramisù</a></h2> &gt;
+                        </li>
+                    </ul> <!-- recipes -->
                 </li><!-- .category -->
             </ul><!-- .cookbook -->
         </nav><!-- .breadcrumb -->
     </header><!-- .top-header -->
     <main class="container">
         <section class="video-summary">
-        <section class="video-recipe">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=62AIR1GYzcN0uAuI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-        <section class="summary">
-            <h3>In breve</h3>
-            <ul class="recipe-summary">
-                <li class="difficulty">Difficoltà: <a class="easy" href="#">Facile</a></li>
-                <li class="preparation">Tempo: <a class="time zero-four-h" href="#">40 min</a></li>
-                <!-- l'idea è che il link sia un modo per filtrare tutte le preparazioni che richiedano tra le 0 e le 4 ore -->
-                <li class="portions">Porzione per: <a class="people four-height-p" href="#">8 persone</a></li>
-                <!-- stessa idea di base per le porzioni -->
-                <li class="cost">Costo: <a class="low-cost" href="#">Contenuto</a></li>
-                <li class="notes">Note: <a class="rest" href="#">+2 ore di riposo in frigo</a></li>
-            </ul>
-        </section><!-- .summary -->
+            <section class="video-recipe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=62AIR1GYzcN0uAuI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            <section class="summary">
+                <h3>In breve</h3>
+                <ul class="recipe-summary">
+                    <li class="difficulty">Difficoltà: <a class="easy" href="#">Facile</a></li>
+                    <li class="preparation">Tempo: <a class="time zero-four-h" href="#">40 min</a></li>
+                    <!-- l'idea è che il link sia un modo per filtrare tutte le preparazioni che richiedano tra le 0 e le 4 ore -->
+                    <li class="portions">Porzione per: <a class="people four-height-p" href="#">8 persone</a></li>
+                    <!-- stessa idea di base per le porzioni -->
+                    <li class="cost">Costo: <a class="low-cost" href="#">Contenuto</a></li>
+                    <li class="notes">Note: <a class="rest" href="#">+2 ore di riposo in frigo</a></li>
+                </ul>
+            </section><!-- .summary -->
         </section><!-- .video-summary -->
         <section class="social-share">
-            <ul class="share-options flex">
+            <ul class="share-options">
                 <li class="facebook"><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
                 <li class="twitter"><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
                 <li class="instagram"><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
@@ -57,20 +57,23 @@
             </ul>
         </section><!-- .social-share -->
         <article class="presentation">
-            <h2>Presentazione</h2>
+            <h2>PRESENTATION</h2>
             <div class="spacer"></div>
             <div class="intro-image">
                 <img src="img/tiramisu.jpg" alt="Tiramisù">
             </div>
-            <p>Back in the day, grandmothers used to prepare a breakfast
+            <p class="recipe-text">Back in the day, grandmothers used to prepare a breakfast
                 that we might call humble today, but was considered very
                 rich at the time! Today the recipe is still unchanged, just
                 break a very fresh egg into a glass, beat it with sugar, and
-                add coffee or hot milk, for children, or Marsala wine or
+                add coffee or hot milk, for children, or <a href="#" title="Discover more wines"><strong
+                        class="wine-category">Marsala wine</strong></a> or
                 aniseed for adults. This marvelous cream gave rise to
-                mascarpone cream used to make Tiramisù (mascarpone
-                cheese and ladyfingers dessert). This is the best Italian
-                dessert, the most popular and beloved of them all, and it
+                mascarpone cream used to make <a href="#" title="Discover more desserts"><strong
+                        class="dessert-category">Tiramisù</strong></a> (mascarpone
+                cheese and ladyfingers dessert). This is the <a href="#" title="Discover more cuisines"><strong
+                        class="cuisine-category">best Italian
+                        dessert</strong></a>, the most popular and beloved of them all, and it
                 has also birthed many other versions, even an egg-free
                 Tiramisù! There is also a strawberry and Nutella tiramisù!
                 Although the origins of this famous dessert are unclear,
