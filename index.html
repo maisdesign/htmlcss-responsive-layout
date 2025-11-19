@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,14 @@
     <title>Giallo Booleano</title>
     <!-- FONT del Mockup -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nerko+One&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="w576"><!-- TODO eliminare la classe prima di andare in produzione -->
+<body>
     <header class="top-header">
         <h1 class="top-title title-color">
             <a href="#">GIALLO BOOLEANO</a>
@@ -33,13 +34,13 @@
     </header><!-- .top-header -->
     <main class="container">
         <section class="video-summary">
-            <section class="video-recipe">
+            <div class="video-recipe">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/JVT900H6s0g?si=62AIR1GYzcN0uAuI"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
-            <section class="summary">
+            </div>
+            <div class="summary">
                 <h3>In breve</h3>
                 <ul class="recipe-summary">
                     <li class="difficulty">Difficoltà: <a class="easy" href="#">Facile</a></li>
@@ -50,17 +51,32 @@
                     <li class="cost">Costo: <a class="low-cost" href="#">Contenuto</a></li>
                     <li class="notes">Note: <a class="rest" href="#">+2 ore di riposo in frigo</a></li>
                 </ul>
-            </section><!-- .summary -->
+            </div><!-- .summary -->
         </section><!-- .video-summary -->
         <section class="social-share">
             <ul class="share-options">
-                <li class="facebook"><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
-                <li class="twitter"><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
-                <li class="instagram"><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
-                <li class="pinterest"><a href="#"><img src="img/pinterest.png" alt="Pinterest"></a></li>
-                <li class="youtube"><a href="#"><img src="img/youtube.png" alt="YouTube"></a></li>
+                <li class="facebook"><a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <p class="social-name">Facebook</p>
+                </li>
+                <li class="twitter"><a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                    <p class="social-name">Twitter</p>
+                </li>
+                <li class="instagram"><a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                    <p class="social-name">Instagram</p>
+                </li>
+                <li class="pinterest"><a href="#"><img src="img/pinterest.png" alt="Pinterest"></a>
+                    <p class="social-name">Pinterest</p>
+                </li>
+                <li class="youtube"><a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+                    <p class="social-name">YouTube</p>
+                </li>
             </ul>
         </section><!-- .social-share -->
+        <section class="ads">
+            <div class="ad-space">
+                <img src="img/banner.png" alt="Advertisement">
+            </div>
+        </section><!-- .ads -->
         <article class="presentation">
             <h2>PRESENTATION</h2>
             <div class="spacer"></div>

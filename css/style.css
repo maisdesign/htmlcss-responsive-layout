@@ -79,13 +79,13 @@ h6 {
 h1,
 h1 a {
     font-family: 'Nerko One', cursive;
-    font-size: 3.5rem;                 
+    font-size: 3.5rem;
     font-weight: 400;
     line-height: 1.1;
-    letter-spacing: 0.03em;            
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-color);
-    text-shadow: 0 0.25rem 0.3rem rgba(0, 0, 0, 0.25); 
+    text-shadow: 0 0.25rem 0.3rem rgba(0, 0, 0, 0.25);
 }
 
 /* LABEL CATEGORIA */
@@ -95,20 +95,20 @@ h1 a {
     font-size: 0.9rem;
     font-weight: 600;
     line-height: 1.4;
-    letter-spacing: 0.14em;            
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.35);        
+    color: rgba(0, 0, 0, 0.35);
 }
 
 /* TITOLO RICETTA */
 .cookbook .recipe h2,
 .cookbook .recipe h2 a {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
-    font-size: 2rem;                   
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0;
-    color: var(--secondary-color);           
+    color: var(--secondary-color);
 }
 
 /* TITOLO SEZIONE  */
@@ -130,7 +130,7 @@ strong {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 1.8;                  
+    line-height: 1.8;
     letter-spacing: 0;
     color: var(--text-color);
 }
@@ -138,8 +138,11 @@ strong {
 /* LINK ENFATIZZATI NEL TESTO 
 (Facile, Veloce, ecc.) E NELLE RICETTE
 (Marsala wine, Tiramisù, ecc.) */
-ul.recipe-summary li a, .recipe-summary a strong, .recipe-text a strong, li.notes {
-    font-weight: 600;                   
+ul.recipe-summary li a,
+.recipe-summary a strong,
+.recipe-text a strong,
+li.notes {
+    font-weight: 600;
 }
 
 ul.recipe-summary li.notes a.rest {
@@ -163,7 +166,8 @@ ul.recipe-summary li.notes a.rest {
     text-align: center;
 }
 
-nav.footer-nav ul, .disclaimer a {
+nav.footer-nav ul,
+.disclaimer a {
     text-decoration: underline;
     text-decoration-color: var(--bg-section);
 }
@@ -177,8 +181,7 @@ nav.footer-nav ul, .disclaimer a {
 **   dimensioni maggiori.
 **/
 
-.top-header {
-}
+.top-header {}
 
 /* TODO versione .top-header per tablet e desktop */
 
@@ -192,13 +195,23 @@ nav.footer-nav ul, .disclaimer a {
 
 /* TODO versione .top-title per tablet e desktop */
 
+@media all and (min-width: 768px) {
+    .top-title {
+        justify-content: flex-start;
+    }
+
+    .top-title a {
+        padding: 0 0 1rem 0;
+    }
+}
+
 .breadcrumb {
     margin: 0 1rem;
     font-size: 0.9rem;
     color: var(--text-color);
 }
 
-.category H3{
+.category h3 {
     opacity: 0.7;
 }
 
@@ -210,55 +223,35 @@ nav.footer-nav ul, .disclaimer a {
 }
 
 /* TODO versione .container per tablet e desktop */
-
-.section.video-summary {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 0 0.8rem 0;
+.video-summary {
+    width: 100%;
 }
 
-/* TODO versione .video-summary per tablet e desktop */
-
-@media all and (min-width: 768px) {
-    .section.video-summary {
-        flex-direction: row;
-    }
+.video-recipe {
+    position: relative;
+    width: 100%;
+    background-color: var(--secondary-color);
 }
 
-@media all and (min-width: 992px) {
-    .section.video-summary {
-        gap: 2rem;
-    }
-
+.video-recipe iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
 }
 
-section.summary {
+/* TODO versione .video-recipe per tablet e desktop */
+
+.summary {
     background: var(--bg-section);
     box-shadow: 1px 1px rgb(0 0 255 / 0.2);
     margin: 0 auto;
     padding: 1rem;
 }
 
-/* TODO versione .summary per tablet e desktop */
+/* TODO versione .summary per desktop */
 
-@media all and (min-width: 768px) {
-    section.summary {
-        width: 70%;
-    }
-}
-
-@media all and (min-width: 992px) {
-    section.summary {
-        width: 60%;
-    }
-}
-
-section.video-recipe{
-    background-color: var(--secondary-color);
-}
+@media all and (min-width: 992px) {}
 
 .social-share {
     width: 100%;
@@ -283,13 +276,92 @@ section.video-recipe{
     width: 4rem;
 }
 
+@media all and (min-width: 576px) {
+    .share-options li {
+        padding: 1rem 3.8rem;
+        border-radius: 2rem;
+        width: auto;
+    }
+
+    ul.share-options li img {
+        width: 2rem;
+        height: auto;
+    }
+}
+
 /* TODO versioni .share-options per tablet e desktop */
+
+.share-options li .social-name {
+    display: none;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+@media all and (min-width: 992px) {
+    .share-options li {
+        width: auto;
+        padding: 0.975rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .share-options li .social-name {
+        display: inline;
+    }
+}
+
+.ads {
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+    .ads {
+        display: block;
+        margin: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ad-space {
+        display: inline-block;
+
+    }
+
+    .ad-space img {
+        box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.12);
+    }
+
+}
 
 .spacer {
     height: 0.1rem;
     background-color: rgb(247, 162, 72);
     width: 14%;
     margin: 0 0 2rem 0;
+}
+
+@media all and (min-width: 768px) {
+    .presentation::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .presentation {
+        padding: 0 1rem;
+    }
+
+    .presentation .intro-image {
+        float: left;
+        width: 40%;
+        margin: 0 1.5rem 1rem 0;
+    }
+
+    .presentation .recipe-text {
+        padding: 0;
+    }
+
 }
 
 /*TODO versione .spacer per tablet e desktop */
@@ -307,7 +379,7 @@ section.video-recipe{
 
 .recipe-text {
     margin: 2rem 0;
-    line-height: 2rem;
+    line-height: 2;
     text-align: left;
     padding: 0 0.8rem;
 }
@@ -329,10 +401,4 @@ nav.footer-nav ul {
     flex-direction: row;
     gap: 1rem;
     justify-content: space-around;
-}
-
-/* TODO eliminare */
-.w576 {
-    width: 576px;
-    margin: 0 auto;
 }
