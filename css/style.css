@@ -46,23 +46,6 @@ ol {
     list-style: none;
 }
 
-/* ========== FLEXBOX ========== */
-.flex {
-    display: flex;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-
 /* ========== TYPOGRAPHY ========== */
 
 /* Reset base titoli */
