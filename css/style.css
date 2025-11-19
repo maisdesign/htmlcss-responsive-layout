@@ -165,7 +165,7 @@ ul.recipe-summary li.notes a.rest {
 }
 
 /* COPYRIGHT IN FOOTER  */
-.copyright {
+footer.main-footer div.footer-left p.copyright {
     font-weight: 600;
     text-align: center;
 }
@@ -184,8 +184,6 @@ nav.footer-nav ul,
 **   576px, e usare le media queries per le
 **   dimensioni maggiori.
 **/
-
-.top-header {}
 
 /* TODO versione .top-header per tablet e desktop */
 
@@ -437,6 +435,14 @@ nav.footer-nav ul,
     background-color: var(--secondary-color);
 }
 
+@media all and (min-width: 768px) {
+    .footer-right {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
 /* TODO versione .main-footer per tablet e desktop */
 
 nav.footer-nav ul {
@@ -444,4 +450,41 @@ nav.footer-nav ul {
     flex-direction: row;
     gap: 1rem;
     justify-content: space-around;
+}
+
+@media all and (min-width: 972px) {
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: row;
+    }
+
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .copyright {
+        text-align: left;
+        font-weight: 600;
+
+    }
+    footer.main-footer div.footer-left p.copyright {
+        text-align: left;
+    }
 }
