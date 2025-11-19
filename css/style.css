@@ -85,7 +85,7 @@ h1 a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-color);
-    text-shadow: 0 0.25rem 0.3rem rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0.25rem 0.3rem rgba(0, 0, 0, 0.75);
 }
 
 /* LABEL CATEGORIA */
@@ -121,7 +121,26 @@ h1 a {
     text-transform: uppercase;
     color: var(--text-color);
 }
+.presentation h2:after {
+   content: "";
+    display: block;
+    height: 0.1rem;
+    width: 14%;
+    margin-top: 0.5rem;
+    background-color: rgb(247, 162, 72);
+}
 
+@media all and (min-width: 768px) {
+    .presentation h2:after {
+        width: 10%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .presentation h2:after {
+        width: 6%;
+    }
+}
 /* TESTO GENERALE (paragrafi, liste, link) */
 p,
 li,
@@ -217,6 +236,13 @@ nav.footer-nav ul,
     }
 }
 
+@media all and (min-width: 992px) {
+    .breadcrumb {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem 0 0 2rem;
+    }
+}
 .category h3 {
     opacity: 0.7;
 }
@@ -234,9 +260,28 @@ nav.footer-nav ul,
     }
 }
 
+@media all and (min-width: 992px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 /* TODO versione .container per tablet e desktop */
 .video-summary {
     width: 100%;
+}
+@media all and (min-width: 992px) {
+    .video-summary {
+        display: flex;
+    }
+    .video-recipe{
+        width: 70%;
+    }
+    .summary{
+        width: 30%;
+        margin: 0;
+    }
 }
 
 .video-recipe {
@@ -346,12 +391,6 @@ nav.footer-nav ul,
 
 }
 
-.spacer {
-    height: 0.1rem;
-    background-color: rgb(247, 162, 72);
-    width: 14%;
-    margin: 0 0 2rem 0;
-}
 
 @media all and (min-width: 768px) {
     .presentation::after {
@@ -370,6 +409,13 @@ nav.footer-nav ul,
         padding: 0;
     }
 
+}
+
+@media all and (min-width: 992px) {
+    .presentation .intro-image {
+        width: 20%;
+    }
+    
 }
 
 /*TODO versione .spacer per tablet e desktop */
