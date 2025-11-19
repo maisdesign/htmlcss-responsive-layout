@@ -22,7 +22,7 @@
 }
 
 
-/* ========== GENERAL ========== */
+/* ========== GENERALE ========== */
 body {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -75,7 +75,7 @@ h6 {
     margin: 0 0 1rem;
 }
 
-/* LOGO / TITOLO PRINCIPALE: "GIALLO BOOLEANO" */
+/* LOGO / TITOLO PRINCIPALE */
 h1,
 h1 a {
     font-family: 'Nerko One', cursive;
@@ -135,10 +135,18 @@ strong {
     color: var(--text-color);
 }
 
-/* LINK ENFATIZZATI NEL TESTO (Marsala wine, Tiramisù, ecc.) */
-p a strong {
+/* LINK ENFATIZZATI NEL TESTO 
+(Facile, Veloce, ecc.) E NELLE RICETTE
+(Marsala wine, Tiramisù, ecc.) */
+ul.recipe-summary li a, .recipe-summary a strong, .recipe-text a strong, li.notes {
     font-weight: 600;                   
 }
+
+ul.recipe-summary li.notes a.rest {
+    font-weight: 400;
+}
+
+
 
 /* LINK FOOTER (più piccoli) */
 .main-footer a,
@@ -146,14 +154,19 @@ p a strong {
 .main-footer p {
     font-size: 0.9rem;
     font-weight: 400;
+    color: var(--bg-section)
 }
 
-/* COPYRIGHT IN FOOTER (leggermente più forte) */
-.main-footer > p {
+/* COPYRIGHT IN FOOTER  */
+.copyright {
     font-weight: 600;
     text-align: center;
 }
 
+nav.footer-nav ul, .disclaimer a {
+    text-decoration: underline;
+    text-decoration-color: var(--bg-section);
+}
 
 
 /* ========== LAYOUT ========== */
@@ -286,7 +299,6 @@ section.summary {
 /*TODO versione .intro-image per tablet e desktop */
 
 .intro-image img {
-    border-radius: 0.5rem;
     box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.12);
 }
 
@@ -307,6 +319,13 @@ section.summary {
 }
 
 /* TODO versione .main-footer per tablet e desktop */
+
+nav.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+}
 
 /* TODO eliminare */
 .w576 {
