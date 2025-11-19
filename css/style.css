@@ -24,10 +24,11 @@
 
 /* ========== GENERAL ========== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
-    line-height: 1.6;
 }
 
 img {
@@ -64,34 +65,96 @@ ol {
 
 /* ========== TYPOGRAPHY ========== */
 
+/* Reset base titoli */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 1rem;
-    font-weight: bold;
+    margin: 0 0 1rem;
 }
 
-h1, h1 a {
-    font-size: 2.5rem;
+/* LOGO / TITOLO PRINCIPALE: "GIALLO BOOLEANO" */
+h1,
+h1 a {
     font-family: 'Nerko One', cursive;
+    font-size: 3.5rem;                 
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.03em;            
+    text-transform: uppercase;
     color: var(--primary-color);
-    text-shadow: 0.1rem 0.1rem 0.15rem rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0.25rem 0.3rem rgba(0, 0, 0, 0.25); 
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li {
+/* LABEL CATEGORIA */
+.category h3,
+.category h3 a {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
-    color:var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.14em;            
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.35);        
 }
+
+/* TITOLO RICETTA */
+.cookbook .recipe h2,
+.cookbook .recipe h2 a {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 2rem;                   
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0;
+    color: var(--secondary-color);           
+}
+
+/* TITOLO SEZIONE  */
+.presentation h2 {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+/* TESTO GENERALE (paragrafi, liste, link) */
+p,
+li,
+a,
+strong {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;                  
+    letter-spacing: 0;
+    color: var(--text-color);
+}
+
+/* LINK ENFATIZZATI NEL TESTO (Marsala wine, Tiramisù, ecc.) */
+p a strong {
+    font-weight: 600;                   
+}
+
+/* LINK FOOTER (più piccoli) */
+.main-footer a,
+.main-footer li,
+.main-footer p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* COPYRIGHT IN FOOTER (leggermente più forte) */
+.main-footer > p {
+    font-weight: 600;
+    text-align: center;
+}
+
+
 
 /* ========== LAYOUT ========== */
 
@@ -102,8 +165,6 @@ li {
 **/
 
 .top-header {
-    padding: 0 1rem;
-    background-color: var(--bg-section);
 }
 
 /* TODO versione .top-header per tablet e desktop */
@@ -112,9 +173,17 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-section);
+    width: 100%;
 }
 
 /* TODO versione .top-title per tablet e desktop */
+
+.breadcrumb {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
 
 .category H3{
     opacity: 0.7;
@@ -183,7 +252,7 @@ section.summary {
 .share-options {
     display: flex;
     gap: 0.8rem;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -203,7 +272,7 @@ section.summary {
 .spacer {
     height: 0.1rem;
     background-color: rgb(247, 162, 72);
-    width: 30%;
+    width: 14%;
     margin: 0 0 2rem 0;
 }
 
