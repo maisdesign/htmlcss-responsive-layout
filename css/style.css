@@ -104,8 +104,9 @@ h1 a {
     text-transform: uppercase;
     color: var(--text-color);
 }
+
 .presentation h2:after {
-   content: "";
+    content: "";
     display: block;
     height: 0.1rem;
     width: 14%;
@@ -124,6 +125,7 @@ h1 a {
         width: 6%;
     }
 }
+
 /* TESTO GENERALE (paragrafi, liste, link) */
 p,
 li,
@@ -215,7 +217,7 @@ nav.footer-nav ul,
 
 @media all and (min-width: 768px) {
     .breadcrumb {
-        padding: 2rem 0 0 1rem ;
+        padding: 2rem 0 0 1rem;
     }
 }
 
@@ -226,6 +228,7 @@ nav.footer-nav ul,
         padding: 2rem 0 0 2rem;
     }
 }
+
 .category h3 {
     opacity: 0.7;
 }
@@ -254,14 +257,17 @@ nav.footer-nav ul,
 .video-summary {
     width: 100%;
 }
+
 @media all and (min-width: 992px) {
     .video-summary {
         display: flex;
     }
-    .video-recipe{
+
+    .video-recipe {
         width: 70%;
     }
-    .summary{
+
+    .summary {
         width: 30%;
         margin: 0;
     }
@@ -398,7 +404,7 @@ nav.footer-nav ul,
     .presentation .intro-image {
         width: 20%;
     }
-    
+
 }
 
 /*TODO versione .spacer per tablet e desktop */
