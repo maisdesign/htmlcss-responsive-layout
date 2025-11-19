@@ -238,7 +238,6 @@ nav.footer-nav ul, .disclaimer a {
 section.summary {
     background: var(--bg-section);
     box-shadow: 1px 1px rgb(0 0 255 / 0.2);
-    width: 98%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -255,6 +254,10 @@ section.summary {
     section.summary {
         width: 60%;
     }
+}
+
+section.video-recipe{
+    background-color: var(--secondary-color);
 }
 
 .social-share {
@@ -304,8 +307,9 @@ section.summary {
 
 .recipe-text {
     margin: 2rem 0;
-    line-height: 1.8;
-    text-align: center;
+    line-height: 2rem;
+    text-align: left;
+    padding: 0 0.8rem;
 }
 
 /*TODO versione .recipe-text per tablet e desktop */
