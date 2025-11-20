@@ -393,6 +393,13 @@ nav.footer-nav ul,
 
     .share-options li .social-name {
         display: inline;
+        font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.35);
     }
 }
 
