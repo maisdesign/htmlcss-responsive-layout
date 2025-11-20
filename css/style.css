@@ -94,6 +94,36 @@ h1 a {
     color: var(--secondary-color);
 }
 
+/* Tablet */
+@media all and (min-width: 768px) {
+
+    .cookbook .recipe h2,
+    .cookbook .recipe h2 a {
+        font-size: 2.2rem;
+    }
+
+    .cookbook .recipe h2 a::after {
+        content: " (Dolce Tradizionale)";
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 992px) {
+
+    .cookbook .recipe h2,
+    .cookbook .recipe h2 a {
+        font-size: 2.4rem;
+    }
+}
+
+
+@media all and (min-width: 768px) {
+    .recipe-type {
+        display: block;
+    }
+}
+
+
 /* TITOLO SEZIONE  */
 .presentation h2 {
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
@@ -161,7 +191,7 @@ ul.recipe-summary li.notes a.rest {
 .main-footer p {
     font-size: 0.9rem;
     font-weight: 400;
-    color: var(--bg-section)
+    color: var(--bg-section);
 }
 
 /* COPYRIGHT IN FOOTER  */
@@ -295,6 +325,17 @@ nav.footer-nav ul,
 
 /* TODO versione .summary per desktop */
 
+@media all and (min-width: 768px) and (max-width: 991px) {
+    ul.recipe-summary {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul.recipe-summary li {
+        flex-basis: calc(100% /3);
+    }
+}
+
 @media all and (min-width: 992px) {}
 
 .social-share {
@@ -378,6 +419,23 @@ nav.footer-nav ul,
 
 }
 
+@media all and (min-width: 576px) {
+    .presentation::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .presentation .intro-image {
+        float: left;
+        width: 60%;
+        margin: 0 1.5rem 1rem 0;
+    }
+
+    .presentation .recipe-text {
+        padding: 0;
+    }
+}
 
 @media all and (min-width: 768px) {
     .presentation::after {
@@ -452,7 +510,7 @@ nav.footer-nav ul {
     justify-content: space-around;
 }
 
-@media all and (min-width: 972px) {
+@media all and (min-width: 992px) {
     .main-footer {
         display: flex;
         justify-content: space-between;
@@ -484,6 +542,7 @@ nav.footer-nav ul {
         font-weight: 600;
 
     }
+
     footer.main-footer div.footer-left p.copyright {
         text-align: left;
     }
