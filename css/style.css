@@ -215,8 +215,6 @@ nav.footer-nav ul,
 **   dimensioni maggiori.
 **/
 
-/* TODO versione .top-header per tablet e desktop */
-
 .top-title {
     display: flex;
     justify-content: center;
@@ -224,8 +222,6 @@ nav.footer-nav ul,
     background-color: var(--bg-section);
     width: 100%;
 }
-
-/* TODO versione .top-title per tablet e desktop */
 
 @media all and (min-width: 768px) {
     .top-title {
@@ -281,7 +277,6 @@ nav.footer-nav ul,
     }
 }
 
-/* TODO versione .container per tablet e desktop */
 .video-summary {
     width: 100%;
 }
@@ -314,16 +309,12 @@ nav.footer-nav ul,
     display: block;
 }
 
-/* TODO versione .video-recipe per tablet e desktop */
-
 .summary {
     background: var(--bg-section);
     box-shadow: 1px 1px rgb(0 0 255 / 0.2);
     margin: 0 auto;
     padding: 1rem;
 }
-
-/* TODO versione .summary per desktop */
 
 @media all and (min-width: 768px) and (max-width: 991px) {
     ul.recipe-summary {
@@ -335,8 +326,6 @@ nav.footer-nav ul,
         flex-basis: calc(100% /3);
     }
 }
-
-@media all and (min-width: 992px) {}
 
 .social-share {
     width: 100%;
@@ -373,8 +362,6 @@ nav.footer-nav ul,
         height: auto;
     }
 }
-
-/* TODO versioni .share-options per tablet e desktop */
 
 .share-options li .social-name {
     display: none;
@@ -470,14 +457,10 @@ nav.footer-nav ul,
 
 }
 
-/*TODO versione .spacer per tablet e desktop */
-
 .intro-image {
     width: 60%;
     margin: 0 auto;
 }
-
-/*TODO versione .intro-image per tablet e desktop */
 
 .intro-image img {
     box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.12);
@@ -489,8 +472,6 @@ nav.footer-nav ul,
     text-align: left;
     padding: 0 0.8rem;
 }
-
-/*TODO versione .recipe-text per tablet e desktop */
 
 .main-footer {
     display: flex;
@@ -507,8 +488,6 @@ nav.footer-nav ul,
         align-items: center;
     }
 }
-
-/* TODO versione .main-footer per tablet e desktop */
 
 nav.footer-nav ul {
     display: flex;
